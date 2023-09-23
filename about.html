@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <div ID="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home </a> </li> 
+                <li><a href="about.html"> About me </a> </li>
+                <li><a href="https://soujanyacheruvu.my.canva.site/portfolio"> Portfolio </a> </li>
+                <li><a href="about.html#contactmenow"> Contact </a> </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div> </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/myphotofinal.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Aboutmeheading"> Bringing clarity to complexity - your go-to data analyst! </h1> 
+                <br/>
+                <p> A data analyst with over five years of diverse experience across multiple domains, I thrive on the challenge of bringing clarity to complexity. For me, the journey of Discovering, Analyzing, and Visualizing data forms the bedrock of my expertise in this realm. Each dataset presents a unique puzzle to solve, allowing me to exercise my creativity and intellectual curiosity in uncovering valuable insights.
+
+                <br> <br> Throughout my career, I have tackled intricate data challenges in various industries, including manufacturing, e-commerce, finance, and digital marketing. Each domain has been a valuable learning experience, reinforcing the profound impact that data insights can have on shaping a company's strategy and success. My proficiency in tools such as Python and SQL empowers me to leverage data-driven approaches effectively, transforming raw information into actionable knowledge.
+                <br> <br>  Currently based in Canada with my husband, I find joy in exploring new places through travel, reading and painting. With a unique blend of technical skills, industry knowledge, and an inquisitive spirit, I am committed to delivering data-driven solutions that make a tangible difference. Please download my resume below or email me if you'd like to learn more. I would love to hear from you. </p>
+            </div>
+            
+        </div>
+        <div class="skills-container">
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('Internships')">Internships</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Areas of Expertise</span><br>Business Intelligence, Predictive Analysis, Data Analytics, Data Management, Data Mining, Data Engineering, ETL, Data Visualization, Strategic Business Planning, Fraud Prevention, Analytical Thinking, Public speaking and presentation</li>
+                    <li><span> Programming Skills </span><br>Python, R Programming, SQL, PostGREs, Excel (VBA) </li>
+                    <li><span> Visualization Tools</span><br>Power BI, Tableau, Looker Studio, Qlick</li>
+                    <li><span> Statistical Methods</span><br>Regression, Classification, Clustering, Decision Trees, Random Forests, Neural Networks, Regression Models, Hypothesis Testing, Experimental Design, Statistical Modelling, A/B Testing</li>
+                    <li><span> Domain Expertise </span><br>Finance, E-commerce, Logistics, Digital Marketing</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Business Analyst | Mediamint | India</span><br> Apr 2022 - Present</li>
+                    <li><span>Data Analyst | Mediamint | India</span><br> Nov 2020 - Apr 2022</li>
+                    <li><span>Risk Analyst | Amazon | India </span><br>Sept 2019 - Nov 2020</li>
+                    <li><span> Procurement Assistant - Gemini Edibles and Fats India Pvt. Ltd. | India</span><br> Jul 2016 - May 2017</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Post Graduate Program in Data Science and Business Analytics </span><br>Texas McCombs School of Business (Online) | 2022 - 2023 <br></li>
+                    <li><span>Masters in Accounting</span><br> Western Sydney University | 2017 - 2019<br></li>
+                    <li><span>Bachelors of Commerce (Honors)</span><br> Osmania University | 2013 - 2016<br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Internships">
+                <ul>
+                    <li><span>Sept 2017 - Oct 2018</span><br> Accounting Assistant | Sri Accounting Business Services | Sydney </li>
+                    <li><span>Aug 2016 - Oct 2016</span><br> Consumer Satisfaction on Mutual Funds | Axis Bank | India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row contact">
+          <div class="contact-left">
+              <h1 class="sub-title" id="contactmenow">Contact Me</h1>
+              <p><i class="fas fa-paper-plane"></i> soujanya.cheruvu19@gmail.com</p>
+              <div class="social-icons">
+                  <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-twitter-square"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+              </div>
+              <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <div class="top-section">
+
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                </div>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <div class="submit-btn-container">
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </div>
+              </form>
+              <span id="msg"></span>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
